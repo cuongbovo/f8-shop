@@ -1,0 +1,48 @@
+:root { 
+    --primary-color: #ee4d2d;
+    /* --primary-color-rgba: rgba (238, 77, 45); */
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* hack  1rem =10px */
+    font-size: 62.5%;
+    line-height: 1.6rem; 
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    /* cac phan tu nam trong day se dc sap xep tren hang ngang */
+    display: flex;
+    /* neu con lon hon cha thi nhay xuong hang */
+    flex-wrap: wrap;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

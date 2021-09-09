@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body>
     <!-- Đặt tên theo chuẩn BEM - BLock Element Modifier -->
     <div class="app">
@@ -27,10 +29,12 @@
                                 <img src="./assets/imgs/qr_code.png" alt="QR Code" class="header__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
-                                        <img src="./assets/imgs/google_play.png" alt="Google Play" class="header__qr-download-img">
+                                        <img src="./assets/imgs/google_play.png" alt="Google Play"
+                                            class="header__qr-download-img">
                                     </a>
                                     <a href="" class="header__qr-link">
-                                        <img src="./assets/imgs/app_store.png" alt="App Store" class="header__qr-download-img">
+                                        <img src="./assets/imgs/app_store.png" alt="App Store"
+                                            class="header__qr-download-img">
                                     </a>
 
                                 </div>
@@ -46,9 +50,9 @@
                             </a>
                         </li>
                     </ul>
-    
+
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fas fa-bell"></i>
                                 Thông báo
@@ -63,7 +67,8 @@
                                             <img src="./assets/imgs/my_pham.png" alt="" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Mỹ phẩm Maybelline chính hãng</span>
-                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc các sản phẩm Maybelline</span>
+                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc
+                                                    các sản phẩm Maybelline</span>
                                             </div>
                                         </a>
                                     </li>
@@ -72,7 +77,8 @@
                                             <img src="./assets/imgs/my_pham.png" alt="" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Mỹ phẩm Maybelline chính hãng</span>
-                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc các sản phẩm Maybelline</span>
+                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc
+                                                    các sản phẩm Maybelline</span>
                                             </div>
                                         </a>
                                     </li>
@@ -81,11 +87,15 @@
                                             <img src="./assets/imgs/my_pham.png" alt="" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Mỹ phẩm Maybelline chính hãng</span>
-                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc các sản phẩm Maybelline</span>
+                                                <span class="header__notify-description">Xác thực chính hãng nguồn gốc
+                                                    các sản phẩm Maybelline</span>
                                             </div>
                                         </a>
                                     </li>
                                 </ul>
+                                <footer class="header_notify-footer">
+                                    <a href="" class="header_notify-footer-btn">Xem tất cả</a>
+                                </footer>
                             </div>
                         </li>
                         <li class="header__navbar-item">
@@ -94,7 +104,8 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                            ký</li>
                         <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
                     </ul>
                 </nav>
@@ -110,5 +121,70 @@
         </footer>
 
     </div>
+
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body">
+            <!-- Authen form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="pasword" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="pasword" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form-policy-link">Điều khoản dịch vụ </a>&
+                            <a href="" class="auth-form-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+
+                <!-- FOOTER SOCIALS FORM -->
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials-icon--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__socials-icon--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fab fa-google-plus-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google                            
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

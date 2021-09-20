@@ -1236,4 +1236,9 @@ i.home-product-item__like-fill {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.3rem;
+    /* top: -10px; */
+}
+
+.home-product__pagination {
+    margin-top: 48px 0 32px 0;
 }
